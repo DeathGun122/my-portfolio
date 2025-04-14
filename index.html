@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fanta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="/">Rohan B</a>
+        <nav>
+            <a href="https://github.com/DeathGun122" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/brohan275" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/rohan-biswas-428aaa340/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header"> 
+                <h1>Hi, I'm Rohan...</h1>
+                <p>Full Stack Web Developer</p>
+            </div>
+            <h5 class="intro-description">
+                A Full Stack Web Developer with a passion for different disciplines like AI/ML, Cybersecurity, and Game Development. I'm a quick learner and have a love for problem solving. Based in West Bengal, India. Love to read books, travel and explore new places.
+            </h5>
+            <div class="link-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="mailto:brohan275@gmail.com">Email me</a>
+                <a href="https://github.com/DeathGun122" target="_blank">GitHub</i></a>
+                <a href="https://x.com/brohan275" target="_blank">Twitter</i></a>
+                <a href="https://www.linkedin.com/in/rohan-biswas-428aaa340/" target="_blank">Linkedin</a>
+            </div>
+
+            <div id="play-game">
+                <button onClick="playGame()">Play Game???</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a colour</h4>
+                <p style="display: none;">Great... now its ruined!</p>
+                <input type="color" id="color-picker" onChange="changeColor()" value="#0084ff">
+                <button style="display: none;" onClick="resetColor()">Reset</button>
+            </div>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Area</td>
+                        <td>Technologies</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frontend</td>
+                        <td>HTML | CSS | JS | React | Next.js</td>
+                    </tr>
+                    <tr>
+                        <td>Backend</td>
+                        <td>Python | Node.js | Express.js | Django</td>
+                    </tr>
+                    <tr>
+                        <td>Database</td>
+                        <td>MongoDB | MySQL | PostgreSQL | SQLite | Firebase</td>
+                    </tr>
+                    <tr>
+                        <td>DevOps</td>
+                        <td>Linux | Docker | Kubernetes | Tailwind CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Other</td>
+                        <td>Git | GitHub | VSCode | Postman </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>April 8, 2025</p>
+                        <h4>Pokedex</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>React</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Javascript</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Pokemon API</p>
+                            </div>
+                        </div>
+                        <p>Pokedex used to look up pokemon, types, stats and moves.</p>
+                        <div class="project-links">
+                            <a href="https://pokedex-app-cssreact.netlify.app/" target="_blank">Live</a>
+                            <a href="https://github.com/DeathGun122/pokedex_app" target="_blank">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/public/Screenshot 2025-04-14 191332.png" alt="pokedex_app">
+                    </div>
+                </div>
+                </div>
+                
+                <div class="project-card">
+                    <div>
+                        <p>April 12, 2025</p>
+                        <h4>Caffiend | Caffeine Tracker</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>React</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Javascript</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Firebase</p>
+                            </div>
+                        </div>
+                        <p>Caffiend is a web app that allows you to track your caffeine intake. Get all details about your caffeine consumption.</p>
+                        <div class="project-links">
+                            <a href="https://caffiend-coffee.netlify.app/" target="_blank">Live</a>
+                            <a href="https://github.com/DeathGun122/caffiend_coffeeTracker" target="_blank">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/public/Screenshot 2025-04-14 224050.png" alt="caffiend">
+                    </div>
+                </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>April 13, 2025</p>
+                        <h4>Unalive | Life Counter</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>React</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Javascript</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>SQLite</p>
+                            </div>
+                        </div>
+                        <p>Counter used to keep track of your life. Make your days worth.</p>
+                        <div class="project-links">
+                            <a href="https://unalive.netlify.app//" target="_blank">Live</a>
+                            <a href="https://github.com/DeathGun122/life-counter" target="_blank">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/public/Screenshot 2025-04-15 000806.png" alt="life-counter">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a href="https://github.com/DeathGun122" target="_blank">Rohan Biswas</a></p>
+    </footer>
+    <script>
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
+
+        function playGame() {
+            colorDiv.style.display = 'block'
+            playBtn.style.display = 'none'
+        }
+
+        function changeColor() {
+            const selectedColor = colorInput.value 
+            body.style.background = selectedColor
+            resetBtn.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            playBtn.style.display = 'block'
+            colorInput.style.display = 'block'
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
